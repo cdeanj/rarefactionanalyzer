@@ -14,7 +14,10 @@ struct cmd_args {
 	int max;
 	int skip;
 	int s_per_level;
-	std::string prefix;
+	std::string gene_fp;
+	std::string mech_fp;
+	std::string class_fp;
+	std::string group_fp;
 };
 
 static void usage() {
@@ -26,7 +29,6 @@ static void usage() {
         fprintf(stderr, "	-ref_fp		STR/FILE		fasta file path\n");
 	fprintf(stderr, "	-annot_fp	STR/FILE		annotation file path\n");
         fprintf(stderr, "	-sam_fp		STR/FILE		sam file path\n");
-        fprintf(stderr, "	-prefix		STR			output prefix\n\n");
 }
 
 struct cmd_args 
@@ -51,8 +53,14 @@ inline parse_command_line(const int argc, const char *argv[]) {
                         arg.skip = atoi(args[++i].c_str());
                 else if(args[i].compare("-samples") == 0)
                         arg.s_per_level = atoi(args[++i].c_str());
-                else if(args[i].compare("-prefix") == 0)
-                        arg.prefix = args[++i];
+		else if(args[i].compare("-gene_fp") == 0)
+			arg.gene_fp = args[++i];
+		else if(args[i].compare("-class_fp") == 0)
+                        arg.class_fp = args[++i];
+		else if(args[i].compare("-group_fp") == 0)
+                        arg.group_fp = args[++i];
+		else if(args[i].compare("-mech_fp") == 0)
+                        arg.mech_fp = args[++i];
                 else {
                         usage();
                         exit(EXIT_FAILURE);

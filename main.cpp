@@ -13,10 +13,10 @@
 using namespace std;
 
 int main(const int argc, const char *argv[]) {
-	/*if(argc != 17) {
+	if(argc != 25) {
 		usage();
 		exit(EXIT_FAILURE);
-	}*/
+	}
 
 	struct cmd_args args;
 	args = parse_command_line(argc, argv);
@@ -44,27 +44,25 @@ int main(const int argc, const char *argv[]) {
 	}
 
 
-	ofstream ofs_gene(args.prefix + "_gene.tab");	
+	ofstream ofs_gene(args.gene_fp);	
 	for(auto key = samp.gene_l.begin(); key != samp.gene_l.end(); ++key) {
 		ofs_gene << key->first << "\t" << key->second.size() << endl;
 	}
 
-	ofstream ofs_class(args.prefix + "_class.tab");
+	ofstream ofs_class(args.class_fp);
 	for(auto key = samp.class_l.begin(); key != samp.class_l.end(); ++key) {
 		ofs_class << key->first << "\t" << key->second.size() << endl;
 	}
 
-	ofstream ofs_mech(args.prefix + "_mechanism.tab");
+	ofstream ofs_mech(args.mech_fp);
 	for(auto key = samp.mechanism_l.begin(); key != samp.mechanism_l.end(); ++key) {
 		ofs_mech << key->first << "\t" << key->second.size() << endl;
         }
 
-	ofstream ofs_group(args.prefix + "_group.tab");
+	ofstream ofs_group(args.group_fp);
 	for(auto key = samp.group_l.begin(); key != samp.group_l.end(); ++key) {
 		ofs_group << key->first << "\t" << key->second.size() << endl;
         }
-
-	
 	
 	return 0;
 }

@@ -24,7 +24,7 @@ static void usage() {
         fprintf(stderr, "\n");
         fprintf(stderr, "Program: ResistomeAnalyzer \n");
         fprintf(stderr, "Contact: Chris Dean <cdean11@rams.colostate.edu>\n\n");
-        fprintf(stderr, "Usage: rsa [options]\n\n");
+        fprintf(stderr, "Usage: rarefaction [options]\n\n");
         fprintf(stderr, "Options:\n\n");
         fprintf(stderr, "	-ref_fp		STR/FILE		fasta file path\n");
 	fprintf(stderr, "	-annot_fp	STR/FILE		annotation file path\n");

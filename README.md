@@ -5,30 +5,30 @@
 $ git clone https://github.com/cdeanj/RarefactionAnalyzer.git
 $ cd RarefactionAnalyzer
 $ make
-$ ./rfa
+$ ./rarefaction
 ```
 
 ## Usage
 ```bash
-$ ./rsa [options]
+$ ./rarefaction [options]
 ```
 
 ## Options
 
 ##### `-ref_fp`
-Path to reference sequence
+Path to fasta formatted reference sequence
 ```bash
 $ -ref_fp /path/to/your/reference.fasta
 ```
 
 ##### `-sam_fp`
-Path to alignment file
+Path to SAM formatted alignment file
 ```bash
 $ -sam_fp /path/to/your/alignment.sam
 ```
 
 ##### `-annot_fp`
-Path to annotation database
+Path to CSV formatted annotation database
 ```bash
 $ -annot_fp /path/to/your/annotation.fasta
 ```

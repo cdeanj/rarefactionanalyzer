@@ -63,8 +63,9 @@ Number of samples to run
 $ -samples 5
 ```
 
-##### `-prefix`
-Prefix for output files
+##### `-t`
+Threshold parameter for determining gene significance
 ```bash
-$ -prefix my_results
+$ -t 80
 ```
+

@@ -22,13 +22,23 @@ struct cmd_args {
 
 static void usage() {
         fprintf(stderr, "\n");
-        fprintf(stderr, "Program: ResistomeAnalyzer \n");
+        fprintf(stderr, "Program: RarefactionAnalyzer\n");
         fprintf(stderr, "Contact: Chris Dean <cdean11@rams.colostate.edu>\n\n");
         fprintf(stderr, "Usage: rarefaction [options]\n\n");
         fprintf(stderr, "Options:\n\n");
-        fprintf(stderr, "	-ref_fp		STR/FILE		fasta file path\n");
-	fprintf(stderr, "	-annot_fp	STR/FILE		annotation file path\n");
-        fprintf(stderr, "	-sam_fp		STR/FILE		sam file path\n");
+        fprintf(stderr, "	-ref_fp		STR/FILE        Fasta file path\n");
+	    fprintf(stderr, "	-annot_fp	STR/FILE        Annotation file path\n");
+        fprintf(stderr, "	-sam_fp		STR/FILE        Sam file path\n");
+	    fprintf(stderr, "	-gene_fp	STR/FILE        Output name for gene level resistome rarefaction distribution\n");
+	    fprintf(stderr, "	-group_fp	STR/FILE        Output name for group level resistome rarefaction distribution\n");
+	    fprintf(stderr, "	-mech_fp	STR/FILE        Output name for mechanism level resistome rarefaction distribution\n");
+	    fprintf(stderr, "	-class_fp	STR/FILE        Output name for class level resistome rarefaction distribution\n");
+	    fprintf(stderr, "	-min            INT             Starting sample level\n");
+	    fprintf(stderr, "	-max            INT             Ending sample level\n");
+	    fprintf(stderr, "	-skip           INT             Number of levels to skip\n");
+	    fprintf(stderr, "	-samples        INT             Iterations per sampling level\n");
+	    fprintf(stderr, "	-t              INT             Gene fraction threshold\n");
+
 }
 
 struct cmd_args 

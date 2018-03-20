@@ -52,13 +52,10 @@ void resistome::process_gene_level(record &rec, const alignment &al) {
                                 break;
                         case 'I':
                                 pos_in_read += occurrence;
-                                pos_in_gene += occurrence;
                                 break;
                         case 'H':
                                 break;
                         case 'P':
-                                pos_in_gene += occurrence;
-                                pos_in_read += occurrence;
                                 break;
                         case 'X':
                                 pos_in_gene += occurrence;

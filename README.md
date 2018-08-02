@@ -2,7 +2,7 @@
 
 ## Overview
 
-Rarefaction analyzer is a simple program that can be used to perform rarefaction analysis. This analysis is particularly useful when you wish to know the fraction of the target population that is captured in your sequence data versus the fraction of the target population that has not been described due to not sequencing deep enough. This is a standard analysis performed for microbiome research and is typically recommended for any kind of metagenomics where counts are of interest. Input to this tool includes a [FASTA](https://en.wikipedia.org/wiki/FASTA_format) formatted reference database, a [SAM](http://samtools.github.io/hts-specs/SAMv1.pdf) formatted alignment file, and a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) formatted annoation database.
+Rarefaction analyzer is a simple program that can be used to perform rarefaction analysis. This analysis is particularly useful when you wish to know the fraction of the target population that is captured in your sequence data versus the fraction of the target population that has not been described due to not sequencing deep enough. This is a standard analysis performed for microbiome research and is typically recommended for any kind of metagenomics where counts are of interest. Input to this tool includes a [FASTA](https://en.wikipedia.org/wiki/FASTA_format) formatted reference database, a [SAM](http://samtools.github.io/hts-specs/SAMv1.pdf) formatted alignment file, and a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) formatted annotation database.
 
 ## Output
 
